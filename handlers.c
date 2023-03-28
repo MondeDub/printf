@@ -77,7 +77,7 @@ int write_number(int is_negative, int ind, char buffer[],
 	return (write_num(ind, buffer, flags, width, precision,
 		length, padd, extra_ch));
 }
- 
+
  /**
  * write_num - Write a number using a bufffer
  * @ind: Index at which the number starts on the buffer
@@ -109,7 +109,6 @@ int write_num(int ind, char buffer[],
 		length++;
 	if (width > length)
 	{
-
 		for (i = 1; i < width - length + 1; i++)
 			buffer[i] = padd;
 		buffer[i] = '\0';
